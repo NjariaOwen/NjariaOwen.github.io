@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c1118">
+  <meta name="description" content="Owen Njaria — Graduate Management Trainee based in Nairobi, working with Oracle database infrastructure and enterprise platforms, and building personal software and automation projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Owen Njaria — Database Infrastructure & Enterprise Platforms">
+  <meta property="og:description" content="A little about my work with Oracle infrastructure, enterprise platforms, and projects I build along the way.">
+  <title>Owen Njaria — Infrastructure, Platforms & Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%230c1118'/%3E%3Ctext x='24' y='33' font-size='27' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EON%3C/text%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: dark; --bg:#f6f7f5; --paper:#fff; --ink:#202c36; --muted:#596871; --muted-2:#819098; --line:#dfe5e5; --blue:#315fc3; --blue-strong:#214eaa; --navy:#202f3b; --ease:cubic-bezier(.2,.8,.2,1); }
+    *,*::before,*::after { box-sizing:border-box; }
+    html {scroll-behavior:smooth; scroll-padding-top:92px;}
+    body {margin:0; background:var(--bg); color:var(--ink); font:400 16px/1.7 'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; -webkit-font-smoothing:antialiased;}
+    ::selection {background:#cad6f7; color:#17273d;}
+    a {color:inherit; text-decoration:none;}
+    button {font:inherit;}
+    a:focus-visible,button:focus-visible {outline:2px solid var(--blue);outline-offset:5px;}
+    .container {width:min(1160px,calc(100% - 92px)); margin-inline:auto;}
+    .skip {position:absolute;top:-100px;left:18px;padding:10px 16px;background:var(--ink);color:#fff;z-index:999;}
+    .skip:focus {top:12px;}
+    .site-header {position:relative;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);}
+    .header-inner {height:88px;display:flex;align-items:center;justify-content:space-between;gap:28px;}
+    .brand {font-weight:700;letter-spacing:-.045em;font-size:21px;white-space:nowrap;line-height:1;}
+    .brand span {color:var(--blue);}
+    .desktop-nav {display:flex;align-items:center;gap:35px;}
+    .desktop-nav a {color:#51616b;font-size:13px;font-weight:600;transition:color .2s;}
+    .desktop-nav a:hover {color:var(--blue);}
+    .header-contact {border:1px solid var(--line);border-radius:40px;padding:9px 17px;background:rgba(255,255,255,.5);}
+    .header-contact:hover {border-color:#aebfdc;}
+    .mobile-toggle {display:none;cursor:pointer;border:1px solid var(--line);border-radius:9px;background:transparent;color:var(--ink);padding:7px 10px;align-items:center;gap:8px;font-size:13px;font-weight:600;}
+    .mobile-nav {display:none;}
+    .hero {position:relative;padding:108px 0 99px;overflow:hidden;border-bottom:1px solid var(--line);}
+    .hero-grid {display:grid;grid-template-columns:minmax(0,1.38fr) minmax(270px,.85fr);align-items:center;gap:64px;}
+    .intro-line {display:flex;align-items:center;gap:11px;color:#62717c;font-size:13px;font-weight:600;margin-bottom:29px;}
+    .intro-line .dot {width:8px;height:8px;background:#5474ae;border-radius:50%;flex:none;}
+    h1,h2,h3,p {margin:0;}
+    h1,h2 {font-family:'Newsreader', Georgia, 'Times New Roman',serif; font-weight:500;}
+    h1 {font-size:clamp(51px,5.5vw,76px);line-height:1.045;letter-spacing:-.049em;max-width:780px;}
+    .hero-copy p {max-width:650px;margin-top:27px;color:var(--muted);font-size:16px;line-height:1.86;}
+    .hero-actions {display:flex;align-items:center;gap:27px;flex-wrap:wrap;margin-top:32px;}
+    .button {min-height:48px;padding:12px 20px;background:var(--blue);color:#fff;display:inline-flex;align-items:center;gap:12px;border-radius:8px;font-size:13px;font-weight:700;transition:background .18s,transform .18s;}
+    .button:hover {background:var(--blue-strong);transform:translateY(-2px);}
+    .arrow {display:inline-block;transition:transform .18s;}
+    a:hover .arrow {transform:translate(2px,-2px);}
+    .plain-link {font-size:13px;font-weight:700;color:#263c52;display:inline-flex;align-items:center;gap:8px;}
+    .plain-link:hover {color:var(--blue);}
+    .hero-visual {width:100%;max-width:390px;margin-left:auto;position:relative;aspect-ratio:1/.92;isolation:isolate;}
+    .hero-visual:before {content:'';position:absolute;inset:6% 1% 5% 2%;border-radius:50%;background:radial-gradient(circle, #e6eeed 0%,#e9eeeb 38%,rgba(233,238,235,0) 72%);z-index:-1;}
+    .hero-visual svg {width:100%;height:100%;overflow:visible;}
+    .section {padding:94px 0;border-bottom:1px solid var(--line);}
+    .section-header {display:flex;justify-content:space-between;align-items:end;gap:48px;margin-bottom:33px;}
+    .section-header h2 {font-size:clamp(34px,3.6vw,46px);line-height:1.12;letter-spacing:-.044em;}
+    .section-header p {color:var(--muted);font-size:14px;max-width:420px;line-height:1.82;}
+    .focus-grid {display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:16px;}
+    .focus {min-height:277px;padding:29px 27px 26px;display:flex;flex-direction:column;border:1px solid var(--line);background:rgba(255,255,255,.72);border-radius:14px;}
+    .focus.primary {background:var(--navy);color:#fff;border-color:var(--navy);}
+    .focus-icon {width:39px;height:39px;margin-bottom:24px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:#f0f3f2;color:#53616d;}
+    .focus.primary .focus-icon {background:#3c505f;color:#f0f5f3;}
+    .focus-icon svg {width:22px;height:22px;}
+    .focus h3 {font-size:17px;font-weight:700;letter-spacing:-.035em;line-height:1.3;margin-bottom:10px;}
+    .focus p {font-size:13px;color:#64717a;line-height:1.8;}
+    .focus.primary p {color:#d2dce1;}
+    .focus-meta {margin-top:auto;padding-top:22px;color:#8b989f;font-size:11px;font-weight:650;letter-spacing:.015em;}
+    .focus.primary .focus-meta {color:#b4c3cc;}
+    .project-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;}
+    .project {position:relative;min-height:314px;padding:28px 26px 24px;background:var(--paper);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;transition:transform .2s var(--ease),box-shadow .2s var(--ease),border-color .2s;}
+    .project:hover {transform:translateY(-4px);box-shadow:0 16px 40px rgba(31,46,60,.06);border-color:#c9d3d8;}
+    .project-icon {width:43px;height:43px;border:1px solid #e3e8e8;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#415a72;margin-bottom:26px;}
+    .project-icon svg {width:23px;height:23px;}
+    .project h3 {font-size:22px;letter-spacing:-.045em;font-weight:700;line-height:1.25;}
+    .project p {font-size:13px;line-height:1.85;color:var(--muted);margin-top:12px;}
+    .project-foot {margin-top:auto;padding-top:22px;display:flex;gap:9px;flex-wrap:wrap;}
+    .project-foot span {font-size:11px;font-weight:600;color:#677680;background:#f3f5f5;padding:5px 9px;border-radius:5px;}
+    .section-note {color:var(--muted-2);font-size:12px;line-height:1.8;margin-top:22px;}
+    .about-grid {display:grid;grid-template-columns:310px minmax(0,1fr);gap:68px;}
+    .about-grid h2 {font-size:clamp(34px,3.6vw,46px);line-height:1.15;letter-spacing:-.045em;}
+    .about-copy {max-width:700px;}
+    .about-copy p {font-size:16px;line-height:1.9;color:var(--muted);}
+    .about-copy p + p {margin-top:16px;}
+    .about-copy strong {color:var(--ink);font-weight:650;}
+    .contact {background:var(--navy);color:#f7fafb;margin-top:88px;}
+    .contact-inner {display:flex;justify-content:space-between;align-items:center;gap:30px;padding:65px 0 70px;}
+    .contact h2 {font-size:clamp(37px,4vw,53px);letter-spacing:-.045em;line-height:1.1;}
+    .contact p {margin-top:14px;color:#c4d0d6;max-width:500px;font-size:14px;line-height:1.8;}
+    .contact-actions {display:flex;flex-direction:column;align-items:flex-start;gap:16px;}
+    .contact .button {background:#f9fbfc;color:#21354a;white-space:nowrap;}
+    .contact .button:hover {background:#e6eeff;}
+    .contact-links {display:flex;gap:22px;}
+    .contact-links a {font-size:12px;color:#c7d5dd;font-weight:600;}
+    .contact-links a:hover {color:#fff;text-decoration:underline;text-underline-offset:5px;}
+    footer {background:#1c2934;color:#a5b3bc;}
+    .footer-inner {display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0;font-size:11px;}
+    .footer-inner span:last-child {color:#80929e;}
+    @media(max-width:1000px) { .container{width:min(100% - 70px,850px)}.hero-grid{gap:25px;grid-template-columns:1.4fr .8fr}.hero-visual{max-width:330px}.focus-grid{grid-template-columns:1fr 1fr}.focus.primary{grid-column:1 / -1;min-height:200px}.focus{min-height:240px}.about-grid{grid-template-columns:240px 1fr;gap:40px}.project{padding:25px 22px;} }
+    @media(max-width:700px) { .container{width:calc(100% - 40px)}.site-header .header-inner{height:73px}.desktop-nav{display:none}.mobile-toggle{display:flex}.mobile-nav{background:var(--bg);border-bottom:1px solid var(--line);padding:5px 20px 17px}.mobile-nav.open{display:flex;flex-direction:column;align-items:stretch;gap:0}.mobile-nav a{padding:11px 5px;border-bottom:1px solid var(--line);font-size:14px;font-weight:600;color:var(--muted)}.mobile-nav a:last-child{border-bottom:0}.hero{padding:72px 0 77px}.hero-grid{display:block}.hero-visual{display:none}.intro-line{margin-bottom:22px}.hero-copy p{font-size:15px;margin-top:24px}.hero-actions{margin-top:30px;gap:24px}h1{font-size:clamp(46px,10.1vw,66px)}.section{padding:68px 0}.section-header{display:block;margin-bottom:27px}.section-header p{margin-top:13px}.focus-grid{grid-template-columns:1fr}.focus.primary{grid-column:auto}.focus,.focus.primary{min-height:0;padding:26px}.focus-icon{margin-bottom:17px}.focus-meta{padding-top:20px}.project-grid{grid-template-columns:1fr}.project{min-height:0;padding:27px 25px 24px}.project-icon{margin-bottom:20px}.project-foot{padding-top:25px}.about-grid{grid-template-columns:1fr;gap:22px}.about-copy p{font-size:15px}.contact{margin-top:0}.contact-inner{padding:61px 0 65px;display:block}.contact-actions{margin-top:28px}.footer-inner{flex-wrap:wrap;row-gap:5px} }
+    @media(min-width:701px) and (max-width:850px) {.project-grid{grid-template-columns:1fr 1fr}.project:nth-child(3){grid-column:1 / -1;min-height:220px}.hero-visual{max-width:240px}h1{font-size:56px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project,.button,.arrow{transition:none !important}}
+
+    /* V5: quiet midnight palette, maintaining the V4 content and structure. */
+    :root {
+      --bg:#0c1118;
+      --paper:#151e29;
+      --ink:#edf2f7;
+      --muted:#a2b1c0;
+      --muted-2:#8495a7;
+      --line:#263440;
+      --blue:#5f90fb;
+      --blue-strong:#769fff;
+      --navy:#142231;
+    }
+    body {background:var(--bg);}
+    ::selection {background:#335caa; color:#f4f8ff;}
+    .skip {background:#233a58;color:#fff;}
+    .site-header {background:rgba(12,17,24,.96);border-color:#24313e;}
+    .brand {color:#f3f5f9;}
+    .desktop-nav a {color:#a9b7c5;}
+    .desktop-nav a:hover,.plain-link:hover {color:#8faeff;}
+    .header-contact {background:#161f2a;border-color:#334355;color:#e2eaf5!important;}
+    .header-contact:hover {border-color:#6086bc;}
+    .mobile-toggle {border-color:#334355;color:#e3eaf3;background:#151e28;}
+    .mobile-nav {background:#111922;}
+    .mobile-nav a {color:#bdc9d6;}
+    .hero {background:radial-gradient(ellipse 40% 70% at 83% 48%, rgba(43,86,137,.18) 0%, rgba(12,17,24,0) 85%);}
+    .intro-line {color:#b2c1cf;}
+    .intro-line .dot {background:#80a9ff;box-shadow:0 0 0 4px rgba(99,148,242,.13);}
+    h1,h2 {color:#f0f3f7;}
+    .hero-copy p {color:#a8b8c7;}
+    .plain-link {color:#c6d6e6;}
+    .button {background:#4c79dc;color:#fbfdff;box-shadow:0 8px 27px rgba(35,84,164,.16);}
+    .button:hover {background:#628ef4;}
+    .hero-visual:before {background:radial-gradient(circle,#20374e 0%,rgba(26,51,75,.34) 42%,rgba(13,19,27,0) 71%);}
+    .focus {background:#151e28;border-color:#2b3b4a;}
+    .focus.primary {background:linear-gradient(145deg,#1c3147,#162537);border-color:#36516d;color:#f3f7fc;}
+    .focus-icon {background:#223040;color:#9cb5d0;}
+    .focus.primary .focus-icon {background:#2b4764;color:#c6daf4;}
+    .focus h3,.project h3 {color:#ecf2f8;}
+    .focus p,.project p {color:#a8b8c6;}
+    .focus.primary p {color:#b9cbdc;}
+    .focus-meta,.focus.primary .focus-meta {color:#92a8bd;}
+    .project {background:#141d27;border-color:#2b3b4a;}
+    .project:hover {border-color:#4e6989;box-shadow:0 20px 42px rgba(0,0,0,.18);}
+    .project-icon {border-color:#354759;color:#95b8e9;background:#1b2b3b;}
+    .project-foot span {background:#243345;color:#aec4d9;}
+    .section-note {color:#91a2b3;}
+    .about-copy strong {color:#f0f5fa;}
+    .contact {background:#152336;border-top:1px solid #34475e;}
+    .contact p {color:#afc0d2;}
+    .contact .button {background:#4c79dc;color:#fff;}
+    .contact .button:hover {background:#628ef4;}
+    .contact-links a {color:#b9cbdf;}
+    footer {background:#0a0f16;border-top:1px solid #263341;color:#9bb0c3;}
+    .footer-inner span:last-child {color:#849aac;}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Owen Njaria, back to top">owen njaria<span>.</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work">What I work on</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a class="header-contact" href="#contact">Get in touch ↗</a>
+      </nav>
+      <button class="mobile-toggle" type="button" id="mobileToggle" aria-label="Open navigation" aria-controls="mobileNav" aria-expanded="false">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg> Menu
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#work">What I work on</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Get in touch</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="intro-line"><span class="dot" aria-hidden="true"></span> Based in Nairobi, Kenya</div>
+          <h1 id="hero-title">Hi, I'm Owen. I work with database infrastructure and enterprise platforms.</h1>
+          <p>I'm a Graduate Management Trainee at Computech Limited. Most of my work is around installing and deploying Oracle Database Appliance (ODA) and Oracle DB Systems. I also spend time with Linux, containers, and the infrastructure that keeps things running.</p>
+          <div class="hero-actions"><a class="button" href="#projects">Explore my projects <span class="arrow" aria-hidden="true">↗</span></a><a class="plain-link" href="https://github.com/NjariaOwen" target="_blank" rel="noopener noreferrer">GitHub <span class="arrow" aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 440 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><pattern id="dots" x="0" y="0" width="23" height="23" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.2" fill="#284258"/></pattern><linearGradient id="face" x1="80" y1="110" x2="355" y2="334" gradientUnits="userSpaceOnUse"><stop stop-color="#1d3245"/><stop offset="1" stop-color="#142433"/></linearGradient></defs>
+            <circle cx="221" cy="202" r="168" stroke="#35546c" stroke-width="1.4"/>
+            <circle cx="221" cy="202" r="135" stroke="#29445a" stroke-dasharray="4 8"/>
+            <rect x="62" y="41" width="313" height="317" rx="34" fill="url(#dots)" opacity=".48"/>
+            <path d="M221 66V351M79 202H363" stroke="#29455b" stroke-dasharray="3 9"/>
+            <ellipse cx="220" cy="313" rx="125" ry="27" fill="#21394b" opacity=".5"/>
+            <rect x="105" y="115" width="230" height="71" rx="12" fill="url(#face)" stroke="#63809b" stroke-width="2"/>
+            <rect x="105" y="185" width="230" height="71" rx="12" fill="url(#face)" stroke="#63809b" stroke-width="2"/>
+            <rect x="105" y="255" width="230" height="71" rx="12" fill="url(#face)" stroke="#63809b" stroke-width="2"/>
+            <rect x="121" y="133" width="198" height="37" rx="6" stroke="#58738a"/>
+            <rect x="121" y="203" width="198" height="37" rx="6" stroke="#58738a"/>
+            <rect x="121" y="273" width="198" height="37" rx="6" stroke="#58738a"/>
+            <circle cx="151" cy="151" r="7" fill="#6d9cf8"/><circle cx="175" cy="151" r="5" fill="#5e7a90"/><circle cx="196" cy="151" r="5" fill="#5e7a90"/>
+            <circle cx="151" cy="221" r="7" fill="#6d9cf8"/><circle cx="175" cy="221" r="5" fill="#5e7a90"/><circle cx="196" cy="221" r="5" fill="#5e7a90"/>
+            <circle cx="151" cy="291" r="7" fill="#6d9cf8"/><circle cx="175" cy="291" r="5" fill="#5e7a90"/><circle cx="196" cy="291" r="5" fill="#5e7a90"/>
+            <path d="M242 152h56M242 222h56M242 292h56" stroke="#6d8495" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M275 170v33M275 240v33" stroke="#688399" stroke-width="1.5" stroke-dasharray="3 6"/>
+            <circle cx="366" cy="118" r="7" fill="#6d9cf8"/><circle cx="65" cy="261" r="5" fill="#6c9ad3"/>
+            <path d="M335 150l31-32M105 256l-40 5" stroke="#4f7089" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-header"><h2 id="work-title">What I work on</h2><p>My main focus is database infrastructure. I also spend time learning and working with the platforms around it.</p></div>
+        <div class="focus-grid">
+          <article class="focus primary"><div class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.65 3.58 3 8 3s8-1.35 8-3V5M4 12c0 1.65 3.58 3 8 3s8-1.35 8-3"/></svg></div><h3>Oracle database infrastructure</h3><p>Installing and deploying Oracle Database Appliance and Oracle DB Systems in enterprise environments. This is where most of my technical work sits.</p><div class="focus-meta">Oracle Database Appliance · DB Systems</div></article>
+          <article class="focus"><div class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h7M11 17.5h7"/></svg></div><h3>Enterprise platforms</h3><p>Working with Red Hat Enterprise Linux, Kubernetes, containers, and observability as part of a wider infrastructure stack.</p><div class="focus-meta">RHEL · Kubernetes · Containers</div></article>
+          <article class="focus"><div class="focus-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5M11 8l-4 4 4 4M14 16h4"/><path d="M16 3v6M13 6h6"/></svg></div><h3>Personal labs</h3><p>Experimenting with deployment workflows and automation, including Pulse, a custom monitoring dashboard for my RHEL server.</p><div class="focus-meta">Linux · Grafana · Automation</div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header"><h2 id="projects-title">Things I'm building</h2><p>A few personal projects that have pushed me to learn something new. They're at different stages of development.</p></div>
+        <div class="project-grid">
+          <article class="project"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></div><h3>sb-hub</h3><p>A Go CLI for creating, managing, and cleaning up temporary Docker-based development environments without the usual container setup hassle.</p><div class="project-foot"><span>Go</span><span>Docker</span><span>CLI</span></div></article>
+          <article class="project"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10Z"/><path d="M9 21v-8h6v8"/></svg></div><h3>Wepesi</h3><p>An in-progress rental billing and property management application, covering properties, tenants, leases, invoices, and payments.</p><div class="project-foot"><span>Python</span><span>PostgreSQL</span><span>Web app</span></div></article>
+          <article class="project"><div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8" width="6" height="8" rx="1.5"/><rect x="15.5" y="3" width="6" height="8" rx="1.5"/><path d="m8.5 12 7-5M8.5 12l7 6"/><rect x="15.5" y="14" width="6" height="7" rx="1.5"/></svg></div><h3>H3LA</h3><p>A personal finance automation idea for turning M-Pesa confirmations into more useful records and insights. Currently in the specification stage.</p><div class="project-foot"><span>Automation</span><span>n8n</span><span>M-Pesa</span></div></article>
+        </div>
+        <p class="section-note">The project repositories are private, so these descriptions reflect the work rather than linking to inaccessible code.</p>
+      </div>
+    </section>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid"><h2 id="about-title">A bit about me</h2><div class="about-copy"><p>I'm interested in <strong>the foundations that make technology work</strong>—the servers, databases, platforms, and processes behind the applications people use every day.</p><p>At Computech Limited, I'm learning through hands-on database infrastructure work. Outside the job, I like testing things in my own environment, figuring out why they break, and building tools that solve problems I've actually run into.</p></div></div>
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><h2 id="contact-title">Get in touch.</h2><p>Happy to connect about databases, infrastructure, personal projects, or an interesting idea you're working on.</p></div><div class="contact-actions"><a class="button" href="mailto:njariaowen@gmail.com">Send me an email <span class="arrow" aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://github.com/NjariaOwen" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/owen-njaria-900a80250" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div></section>
+  </main>
+  <footer><div class="container footer-inner"><span>© <span id="year">2026</span> Owen Njaria</span><span>Nairobi, Kenya.</span></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('mobileToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeMobile = () => { mobileNav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open navigation'); };
+    toggle.addEventListener('click', () => { const opening = !mobileNav.classList.contains('open'); mobileNav.classList.toggle('open', opening); toggle.setAttribute('aria-expanded', String(opening)); toggle.setAttribute('aria-label', opening ? 'Close navigation' : 'Open navigation'); });
+    mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobile));
+    window.addEventListener('resize', () => { if (window.innerWidth > 700) closeMobile(); });
+  </script>
+</body>
+</html>
